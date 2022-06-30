@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <h2>Sign-Up</h2>
+    <div class="container">
+        @{ Html.BeginForm();}
+        <div class="row">
+            <div class="col-lg-3">
+                @Html.Label("FullName")
+            </div>
+            <div class="col-lg-3">
+                @Html.TextBox("FullName")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                @Html.Label("Email_Id")
+            </div>
+            <div class="col-lg-3">
+                @Html.TextBox("Email")
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                @Html.Label("Password")
+            </div>
+            <div class="col-lg-3">
+                @Html.TextBox("Password")
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="SignUp" />
+        </div>
+        <div class="row">
+            <p>Already Have an Account?'</p>@Html.ActionLink("Click Here", "SignIn")
+        </div>
+
+    </div>
+
+            }
